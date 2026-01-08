@@ -111,5 +111,172 @@
 // }
 
 
+// import java.util.*;
+// public class Main{
+//     public static boolean isPrime(int n){
+
+//         for (int i =2; i<=Math.sqrt(n); i++){ /// i<=n-1 also can be use but it wont check the iterative numbers..
+//             if(n%i == 0){
+//                 return false;
+//             }
+//         }return true;
+//     }
+//     public static void main(String args[]){
+//         System.out.println(isPrime(2));
+//     }
+// }
+
+
+// import java.util.*;
+// public class Main{
+//     public static boolean isPrime(int n){
+//         for (int i =2; i<=Math.sqrt(n); i++){
+//             if(n%i == 0){
+//               return false;
+//             }
+//         }return true;
+//     }
+//     public static void tillPrime(int n){
+//         for (int i = 2; i<=n-1; i++){
+//             if(isPrime(i)){
+
+//                 System.out.println(i+" ");
+//             }
+//         }
+//     }
+//     public static void main(String args[]){
+//         tillPrime(20);
+//     }
+// }  
+
+
+
+
+
+// public class Main{
+
+//     public static void binToDec(int n){
+//         int myNum = n;
+//         int pow = 0;
+//         int decNum = 0;
+//         while(n>0){
+//             int lastDigit = n%10;
+//             decNum = decNum+(lastDigit*(int)Math.pow(2,pow));
+
+//             pow++;
+//             n=n/10;
+//         }
+//         System.out.println("decimal of "+myNum+"="+decNum);
+//     }
+//     public static void main(String args[]){
+//         binToDec(101);
+//     }
+// }
+
+
+
+
+// public class Main{
+
+//     public static void decToBin(int n){
+//         int myNum = n;
+//         int pow = 0;
+//         int binNum = 0;
+//         while(n>0){
+//             int rem = n%2;
+//             binNum = binNum+(rem*(int)Math.pow(10,pow));
+
+//             pow++;
+//             n=n/2;
+//         }
+//         System.out.println("binary of "+myNum+"="+binNum);
+//     }
+//     public static void main(String args[]){
+//         decToBin(5);
+//     }
+// }
+
+
+
+// import java.util.*;
+// public class Main{
+
+//     public static void main(String args[]){
+//         int marks[] = new int[100];
+//         Scanner sc = new Scanner(System.in);
+//         marks[0] = sc.nextInt();
+//         marks[1] = sc.nextInt();
+//         marks[2] = sc.nextInt();
+    
+//     System.out.println("phy mark = "+marks[0]);
+//     System.out.println("che mark = "+marks[1]);
+//     System.out.println("math mark = "+marks[2]);
+
+//     int percentage = (marks[0]+marks[1]+marks[2])/3;
+//     System.out.println("percentage = "+percentage+"%");
+// }}
+
+
+
+
+// import java.util.*;
+// public class Main{
+//     public static void Update(int marks[]){
+//         for(int i = 0; i<marks.length;i++){
+//             marks[i]=marks[i]+1;
+//         }}
+//         public static void main(String args[]){
+//             int marks[] = {97,98,99};
+//             Update(marks);
+//             for(int i = 0; i<marks.length; i++){
+//                 System.out.println(marks[i]+" ");
+//             }
+//         System.out.println();
+//     }
+// }
+
+
+
+
+
+// import java.util.*;
+// public class Main{
+//     public static int linearSearch(int numbers[], int key){
+//         for(int i = 0; i<numbers.length;i++){
+//         if(numbers[i] == key){
+//             return i;}}
+//             return -1;
+//         }
+//         public static void main(String args[]){
+//            int numbers [] = {2,3,4,5,6,7,8};
+//            int key = 7;
+//            int index = linearSearch(numbers,key);
+//            if(index == -1){
+//             System.out.println("key is not present");
+//            }else{
+//             System.out.println("key is at "+index+"th index");
+//            }
+//     }
+// }
+
+
+
+
+import java.util.*;
+public class Main{
+    public static int largestNumber(int numbers[]){
+        int larger = Integer.MAX_VALUE;
+        for(int i = 0; i < numbers.length; i++){
+            if (larger < numbers[i]){
+                larger = numbers[i];
+            }
+        }return larger;}
+        public static void main(String args[]){
+            int number[] = {1,2,3,6,5,4};
+            System.out.println(largestNumber(number));
+        }
+    }
+
+
 
 
