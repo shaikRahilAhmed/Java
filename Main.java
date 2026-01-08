@@ -265,7 +265,7 @@
 import java.util.*;
 public class Main{
     public static int largestNumber(int numbers[]){
-        int larger = Integer.MAX_VALUE;
+        int larger = Integer.MIN_VALUE;
         for(int i = 0; i < numbers.length; i++){
             if (larger < numbers[i]){
                 larger = numbers[i];
