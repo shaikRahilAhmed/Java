@@ -262,21 +262,126 @@
 
 
 
+// import java.util.*;
+// public class Main{
+//     public static int largestNumber(int numbers[]){
+//         int larger = Integer.MIN_VALUE;
+//         for(int i = 0; i < numbers.length; i++){
+//             if (larger < numbers[i]){
+//                 larger = numbers[i];
+//             }
+//         }return larger;}
+//         public static void main(String args[]){
+//             int number[] = {1,2,3,6,5,4};
+//             System.out.println(largestNumber(number));
+//         }
+//     }
+
+
+
+
+// import java.util.*;
+// public class Main{
+//     public static int binSearch(int number[], int key){
+//         int start = 0; int end = number.length-1;
+//         while(start<=end){
+//             int mid = (start + end)/2;
+            
+//             if (number[mid] == key){
+//                 return mid;
+//             }
+//             if (number[mid] < key){
+//                 start = mid + 1;
+//             }else{
+//                  start = mid - 1;
+//             }
+//         }
+//         return -1;
+//     }
+//     public static void main(String args[]){
+//         int numbers[] = {2,4,6,8,9,10};
+//         int key = 9;
+        
+//         System.out.println(binSearch(numbers, key));
+//     }
+// }
+
+
+
+
+// import java.util.*;
+// public class Main{
+//     public static void reverse(int number[]){
+//         int start = 0;
+//         int end = number.length-1;
+        
+//         while(start < end){
+//             int temp = number[end];
+//             number[end] = number[start];
+//             number[start] = temp;
+//             start++;
+//             end--;
+//         }
+//         }
+//     public static void main(String args[]){
+//         int numbers[] = {9,8,7,6,5,4,3,2,1};
+        
+//         reverse(numbers);
+        
+//         for(int i = 0; i < numbers.length; i++){
+//             System.out.print(numbers[i]+ " ");
+//         }
+//         System.out.println();
+       
+//     }
+// }
+
+
+
+// import java.util.*;
+// public class Main{
+//     public static void pairsNum(int numbers[]){
+//         for(int i=0; i<numbers.length; i++){
+//             int curr = numbers[i];
+//             for(int j=i+1; j<numbers.length; j++){
+//                 System.out.print("("+curr+","+numbers[j]+")");
+//             }
+//             System.out.println();
+//         }
+//     }
+//     public static void main(String args[]){
+//         int numbers[] = {2,3,4,5,6,7};
+//         pairsNum(numbers);
+    
+//     }
+// }
+
+
+
+
 import java.util.*;
 public class Main{
-    public static int largestNumber(int numbers[]){
-        int larger = Integer.MIN_VALUE;
+    public static void subArray(int numbers[]){
+        int totalSubArrays = 0;
         for(int i = 0; i < numbers.length; i++){
-            if (larger < numbers[i]){
-                larger = numbers[i];
-            }
-        }return larger;}
-        public static void main(String args[]){
-            int number[] = {1,2,3,6,5,4};
-            System.out.println(largestNumber(number));
-        }
+            int start = i;
+            for(int j = i; j < numbers.length; j++){
+                int end = j;{
+                    for(int k = start; k<=end; k++){
+                        System.out.print(numbers[k]+ " ");
+                    }
+                    totalSubArrays++;
+                    System.out.println();
+                }
+            }System.out.println();
+        }System.out.println("total SubArrays= "+ totalSubArrays);
+        
     }
-
-
+    public static void main(String args[]){
+        int numbers[] = {2,3,4,5,6};
+        subArray(numbers);
+    
+    }
+}
 
 
